@@ -1,11 +1,13 @@
+import { Outlet } from "react-router-dom";
+
 import Sidebar from "./Sidebar";
-import MainContainer from "./MainContainer";
 
 const Body = () => {
   return (
     <div className="flex">
       <Sidebar />
-      <MainContainer />
+      {/* Depending on the route, we'll show either the MainContainer or WatchPage */}
+      <Outlet />
     </div>
   );
 };
