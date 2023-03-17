@@ -15,7 +15,7 @@ const ButtonList = () => {
   return (
     <div className="flex">
       {categories.map((category) => (
-        <Button name={category} />
+        <Button key={category} name={category} />
       ))}
     </div>
   );
